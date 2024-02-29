@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 
-/* Asteris wildcard selector to override default styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General styles */
+/* Generic styles */
 body {
     min-height: 100vh;
     display: flex;
@@ -34,16 +34,16 @@ header {
     align-items: baseline;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
 }
 
 #menu {
@@ -52,7 +52,7 @@ header a {
     list-style-type: none;
 }
 
-#menu>li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -88,9 +88,9 @@ nav {
 /* Main content */
 main {
     background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down*/
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 79px;
+    margin-top: 47px;
 }
 
 /* Footer */
@@ -127,6 +127,13 @@ footer {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
+    
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
 }
 
 /* Large devices (laptop and desktops, 992px and up) */
@@ -134,5 +141,4 @@ footer {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-
 }
