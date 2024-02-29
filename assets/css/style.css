@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     /* General project styles */
     color: #3a3a3a;
-    font-family: "Lato",  sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 
@@ -39,7 +39,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-}    
+}
 
 header a {
     text-decoration: none;
@@ -52,7 +52,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -65,7 +65,7 @@ nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    left : 0;
+    left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
@@ -96,4 +96,29 @@ main {
 /* Footer */
 footer {
     background-color: orange;
+}
+
+/* Meadia query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
