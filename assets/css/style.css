@@ -190,6 +190,16 @@ hr {
     color: #ffffff;
 }
 
+/* Gallery Page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -204,6 +214,8 @@ hr {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* Media query: large or landscape phones (576px and up) */
 
 /* Meadia query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
