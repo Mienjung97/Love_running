@@ -216,6 +216,12 @@ hr {
 }
 
 /* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 768px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
 /* Meadia query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -277,12 +283,22 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 /* Large devices (laptop and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #photos {
+        column-count: 4;
+        column-gap: 0;
     }
 }
 
@@ -312,5 +328,9 @@ hr {
 
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    #photos {
+        column-count: 5;
+        column-gap: 0;
     }
 }
